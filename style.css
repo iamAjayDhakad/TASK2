@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('images/form-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #111;
+}
+
+
+header {
+  text-align: center;
+  padding: 60px 20px 30px;
+  background: linear-gradient(to right, #ffffff, #f0f0f0);
+}
+
+header h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+section {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+section:hover {
+  transform: translateY(-4px);
+}
+
+input, textarea {
+  width: 100%;
+  padding: 14px;
+  margin: 12px 0;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  font-size: 1rem;
+  background: #fefefe;
+  transition: border 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  border-color: #007aff;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  background: #007aff;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #005fcc;
+  transform: scale(1.02);
+}
+
+.todo-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-section li {
+  background: #f1f1f1;
+  margin: 10px 0;
+  padding: 12px 16px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s ease;
+}
+
+.todo-section li.completed {
+  text-decoration: line-through;
+  color: #888;
+  background: #e0e0e0;
+}
+
+.todo-section li button {
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #ff3b30;
+}
+
+.error {
+  color: #ff3b30;
+  font-size: 0.9rem;
+  margin-top: -8px;
+}
+.form-section {
+  background: url() no-repeat center center/cover;
+
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  color: white;
+  backdrop-filter: blur(4px);
+  background-blend-mode: overlay;
+}
+.contact-footer {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  margin-top: 60px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact-footer a {
+  color: #00acee;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-footer a:hover {
+  text-decoration: underline;
+}
